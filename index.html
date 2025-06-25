@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Barista Cafe HTML CSS Template</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
+            
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/vegas.min.css" rel="stylesheet">
+
+        <link href="css/tooplate-barista.css" rel="stylesheet">
+        
+<!--
+
+Tooplate 2137 Barista Cafe
+
+https://www.tooplate.com/view/2137-barista-cafe
+
+Bootstrap 5 HTML CSS Template
+
+-->
+    </head>
+    
+    <body>
+                
+            <main>
+                <nav class="navbar navbar-expand-lg">                
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <img src="data:image/png;base64,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" alt="">
+                            ICE CREAM SHOP
+                        </a>
+        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-lg-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_1">Home</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_2">About</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_3">Our Menu</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_4">Reviews</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                                </li>
+                            </ul>
+
+                            <div class="ms-lg-3">
+                                <a class="btn custom-btn custom-border-btn" href="reservation.html">
+                                    Reservation
+                                    <i class="bi-arrow-up-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                    <div class="container">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 col-12 mx-auto">
+                                <em class="small-text">welcome to ICE CREAM SHOP</em>
+                                
+                                <h1>MMELTY MAGIC</h1>
+
+                                <p class="text-white mb-4 pb-lg-2">
+                                    your <em>favourite</em> coffee daily lives.
+                                </p>
+
+                                <a class="btn custom-btn custom-border-btn smoothscroll me-3" href="#section_2">
+                                    Our Story
+                                </a>
+
+                                <a class="btn custom-btn smoothscroll me-2 mb-2" href="#section_3"><strong>Check Menu</strong></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="hero-slides"></div>
+                </section>
+
+
+                <section class="about-section section-padding" id="section_2">
+                    <div class="section-overlay"></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 col-12">
+                                <div class="ratio ratio-1x1">
+                                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                                        <source src="videos/pexels-mike-jones-9046237.mp4" type="video/mp4">
+
+                                        Your browser does not support the video tag.
+                                    </video>
+
+                                    <div class="about-video-info d-flex flex-column">
+                                        <h4 class="mt-auto">We Started Since 2009.</h4>
+
+                                        <h4>Best Cafe in Klang.</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
+                                <em class="text-white">Barista.co</em>
+
+                                <h2 class="text-white mb-3">Cafe KL</h2>
+
+                                <p class="text-white">The café had been in the town for as long as anyone could remember, and it had become a beloved institution among the locals.</p>
+
+                                <p class="text-white">The café was run by a friendly and hospitable couple, Mr. and Mrs. Johnson. Barista Cafe is free Bootstrap 5 HTML layout provided by <a rel="nofollow" href="https://www.tooplate.com" target="_blank">Tooplate</a>.</p>
+
+                                <a href="#barista-team" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4">Meet Baristas</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="barista-section section-padding section-bg" id="barista-team">
+                    <div class="container">
+                        <div class="row justify-content-center">
+
+                            <div class="col-lg-12 col-12 text-center mb-4 pb-lg-2">
+                                <em class="text-white">Creative Baristas</em>
+
+                                <h2 class="text-white">Meet People</h2>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                                <div class="team-block-wrap">
+                                    <div class="team-block-info d-flex flex-column">
+                                        <div class="d-flex mt-auto mb-3">
+                                            <h4 class="text-white mb-0">PAVI</h4>
+
+                                            <p class="badge ms-4"><em>Boss</em></p>
+                                        </div>
+
+                                        <p class="text-white mb-0">your favourite coffee daily lives tempor.</p>
+                                    </div>
+
+                                    <div class="team-block-image-wrap">
+                                        <img src="images/team/portrait-elegant-old-man-wearing-suit.jpg" class="team-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                                <div class="team-block-wrap">
+                                    <div class="team-block-info d-flex flex-column">
+                                        <div class="d-flex mt-auto mb-3">
+                                            <h4 class="text-white mb-0">PRAJWALA</h4>
+
+                                            <p class="badge ms-4"><em>Manager</em></p>
+                                        </div>
+
+                                        <p class="text-white mb-0">your favourite coffee daily lives.</p>
+                                    </div>
+
+                                    <div class="team-block-image-wrap">
+                                        <img src="images/team/cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg" class="team-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                                <div class="team-block-wrap">
+                                    <div class="team-block-info d-flex flex-column">
+                                        <div class="d-flex mt-auto mb-3">
+                                            <h4 class="text-white mb-0">KEERTHANA</h4>
+
+                                            <p class="badge ms-4"><em>Manager
+                                            </em></p>
+                                        </div>
+
+                                        <p class="text-white mb-0">your favourite coffee daily lives.</p>
+                                    </div>
+
+                                    <div class="team-block-image-wrap">
+                                        <img src="images/team/small-business-owner-drinking-coffee.jpg" class="team-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="team-block-wrap">
+                                    <div class="team-block-info d-flex flex-column">
+                                        <div class="d-flex mt-auto mb-3">
+                                            <h4 class="text-white mb-0">PANNAYA</h4>
+
+                                            <p class="badge ms-4"><em>boss</em></p>
+                                        </div>
+
+                                        <p class="text-white mb-0">your favourite coffee daily consectetur.</p>
+                                    </div>
+
+                                    <div class="team-block-image-wrap">
+                                        <img src="images/team/smiley-business-woman-working-cashier.jpg" class="team-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="menu-section section-padding" id="section_3">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                                <div class="menu-block-wrap">
+                                    <div class="text-center mb-4 pb-lg-2">
+                                        <em class="text-white">Delicious Menu</em>
+                                        <h4 class="text-white">Breakfast</h4>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Pancakes</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$12.50</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Fresh brewed coffee and steamed milk</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex">
+                                            <h6>
+                                                Toasted Waffle
+                                            </h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="text-white ms-auto"><del>$16.50</del></strong>
+
+                                            <strong class="ms-2">$12.00</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Brewed coffee and steamed milk</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Fried Chips
+                                                <span class="badge ms-3">Recommend</span>
+                                            </h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$15.0</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Rich Milk and Foam</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex">
+                                            <h6>Pancakes</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$12.50</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Fresh brewed coffee and steamed milk</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Banana Cakes</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$18.0</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Rich Milk and Foam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="menu-block-wrap">
+                                    <div class="text-center mb-4 pb-lg-2">
+                                        <em class="text-white">Favourite Menu</em>
+                                        <h4 class="text-white">Coffee</h4>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Latte</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="text-white ms-auto"><del>$12.50</del></strong>
+
+                                            <strong class="ms-2">$7.50</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Fresh brewed coffee and steamed milk</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex">
+                                            <h6>
+                                                White Coffee
+                                                <span class="badge ms-3">Recommend</span>
+                                            </h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$5.90</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Brewed coffee and steamed milk</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Chocolate Milk</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$5.50</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Rich Milk and Foam</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block my-4">
+                                        <div class="d-flex">
+                                            <h6>Greentea</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$7.50</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Fresh brewed coffee and steamed milk</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-block">
+                                        <div class="d-flex">
+                                            <h6>Dark Chocolate</h6>
+                                        
+                                            <span class="underline"></span>
+
+                                            <strong class="ms-auto">$7.25</strong>
+                                        </div>
+
+                                        <div class="border-top mt-2 pt-2">
+                                            <small>Rich Milk and Foam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="reviews-section section-padding section-bg" id="section_4">
+                    <div class="container">
+                        <div class="row justify-content-center">
+
+                            <div class="col-lg-12 col-12 text-center mb-4 pb-lg-2">
+                                <em class="text-white">Reviews by Customers</em>
+
+                                <h2 class="text-white">Testimonials</h2>
+                            </div>
+
+                            <div class="timeline">
+                                <div class="timeline-container timeline-container-left">
+                                    <div class="timeline-content">
+                                        <div class="reviews-block">
+                                            <div class="reviews-block-image-wrap d-flex align-items-center">
+                                                <img src="images/reviews/young-woman-with-round-glasses-yellow-sweater.jpg" class="reviews-block-image img-fluid" alt="">
+
+                                                <div class="">
+                                                    <h6 class="text-white mb-0">Sandra</h6>
+                                                    <em class="text-white"> Customers</em>
+                                                </div>
+                                            </div>
+
+                                            <div class="reviews-block-info">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                                <div class="d-flex border-top pt-3 mt-4">
+                                                    <strong class="text-white">4.5 <small class="ms-2">Rating</small></strong>
+
+                                                    <div class="reviews-group ms-auto">
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-container timeline-container-right">
+                                    <div class="timeline-content">
+                                        <div class="reviews-block">
+                                            <div class="reviews-block-image-wrap d-flex align-items-center">
+                                                <img src="images/reviews/senior-man-white-sweater-eyeglasses.jpg" class="reviews-block-image img-fluid" alt="">
+
+                                                <div class="">
+                                                    <h6 class="text-white mb-0">Don</h6>
+                                                    <em class="text-white"> Customers</em>
+                                                </div>
+                                            </div>
+
+                                            <div class="reviews-block-info">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                                <div class="d-flex border-top pt-3 mt-4">
+                                                    <strong class="text-white">4.5 <small class="ms-2">Rating</small></strong>
+
+                                                    <div class="reviews-group ms-auto">
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-container timeline-container-left">
+                                    <div class="timeline-content">
+                                        <div class="reviews-block">
+                                            <div class="reviews-block-image-wrap d-flex align-items-center">
+                                                <img src="images/reviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg" class="reviews-block-image img-fluid" alt="">
+
+                                                <div class="">
+                                                    <h6 class="text-white mb-0">Olivia</h6>
+                                                    <em class="text-white"> Customers</em>
+                                                </div>
+                                            </div>
+
+                                            <div class="reviews-block-info">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                                <div class="d-flex border-top pt-3 mt-4">
+                                                    <strong class="text-white">4.5 <small class="ms-2">Rating</small></strong>
+
+                                                    <div class="reviews-group ms-auto">
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star-fill"></i>
+                                                        <i class="bi-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="contact-section section-padding" id="section_5">
+                    <div class="container">
+                        <div class="row">   
+
+                            <div class="col-lg-12 col-12">
+                                <em class="text-white">Say Hello</em>
+                                <h2 class="text-white mb-4 pb-lg-2">Contact</h2>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <form action="#" method="post" class="custom-form contact-form" role="form">
+
+                                <div class="row">
+                                    
+                                    <div class="col-lg-6 col-12">
+                                        <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Jackson" required="">
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">
+                                        <label for="email" class="form-label">Email Address</label>
+
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jack@gmail.com" required="">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">How can we help?</label>
+
+                                        <textarea name="message" rows="4" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 col-12 mx-auto mt-3">
+                                    <button type="submit" class="form-control">Send Message</button>
+                                </div>
+                            </form>
+                            </div>
+
+                            <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
+                                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-12 me-auto">
+                                <em class="text-white d-block mb-4">Where to find us?</em>
+
+                                <strong class="text-white">
+                                    <i class="bi-geo-alt me-2"></i>
+                                    Bandra West, Mumbai, Maharashtra 400050, India
+                                </strong>
+
+                                <ul class="social-icon mt-4">
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link bi-facebook">
+                                        </a>
+                                    </li>
+        
+                                    <li class="social-icon-item">
+                                        <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter">
+                                        </a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link bi-whatsapp">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                                <em class="text-white d-block mb-4">Contact</em>
+
+                                <p class="d-flex mb-1">
+                                    <strong class="me-2">Phone:</strong>
+                                    <a href="tel: 305-240-9671" class="site-footer-link">
+                                        (65) 
+                                        305 2409 671
+                                    </a>
+                                </p>
+
+                                <p class="d-flex">
+                                    <strong class="me-2">Email:</strong>
+
+                                    <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                        hello@barista.co
+                                    </a>
+                                </p>
+                            </div>
+
+
+                            <div class="col-lg-5 col-12">
+                                <em class="text-white d-block mb-4">Opening Hours.</em>
+
+                                <ul class="opening-hours-list">
+                                    <li class="d-flex">
+                                        Monday - Friday
+                                        <span class="underline"></span>
+
+                                        <strong>9:00 - 18:00</strong>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        Saturday
+                                        <span class="underline"></span>
+
+                                        <strong>11:00 - 16:30</strong>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        Sunday
+                                        <span class="underline"></span>
+
+                                        <strong>Closed</strong>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-8 col-12 mt-4">
+                                <p class="copyright-text mb-0">Copyright © Barista Cafe 2048 
+                                    - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                            </div>
+                    </div>
+                </footer>
+            </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/vegas.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
